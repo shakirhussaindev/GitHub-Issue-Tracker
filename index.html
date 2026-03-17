@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Github Issue Tracker</title>
+
+  <!-- Font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+   <!-- Tailwind + Daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Stylesheet -->
+   <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- Login Page -->
+  <section id="signin" class="w-4/12 mx-auto mt-8 p-8 rounded-lg shadow">
+    <div class="flex justify-center mt-">
+      <img src="./assets/github-logo.png" alt="">
+    </div>
+    <h1 class="text-2xl font-semibold text-center pt-6 pb-1">GitHub Issues Tracker</h1>
+    <p class="text-[#64748B] text-center">Sign in to manage your issues</p>
+
+    
+      <div class="flex flex-col mt-6 mb-4">
+        <label class="text-[#1F2937] font-medium pb-2" for="username">Username</label>
+        <input id="username" class="placeholder:text-[#64748B] p-4 border-[#E4E4E7] rounded-lg mt-2 mb-1.5" type="text" placeholder="Enter Username">
+        <label class="text-sm text-[#4A00FF]">Default: admin</label>
+      </div>
+      <div class="flex flex-col">
+        <label class="text-[#1F2937] font-medium pb-2" for="password">Password</label>
+        <input id="password" class="placeholder:text-[#64748B] p-4 border-[#E4E4E7] rounded-lg mt-2 mb-1.5" type="password" placeholder="Enter Password">
+        <label class="text-sm text-[#4A00FF]">Default: admin123</label>
+
+        <button id="signinBtn" class="btn btn-primary mt-6 font-semibold rounded-lg">Sign In</button>
+        <p class="text-center py-4">OR</p>
+        <p class="text-sm text-[#64748B] text-center">Demo Credentials:</p>
+        <div class="flex flex-col justify-center items-center pt-6 pb-8 rounded-lg bg-[#F8FAFC]">
+          <p class="font-semibold text-[#1F2937]">Username: <span class="font-normal">admin</span></p>
+          <p class="font-semibold text-[#1F2937]">Password: <span class="font-normal">admin123</span></p>
+        </div>
+      </div>
+    
+
+  </section>
+
+  <script src="./js/signin.js"></script>
+</body>
+</html>
