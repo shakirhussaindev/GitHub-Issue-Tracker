@@ -7,7 +7,7 @@ const signinBtn = document.getElementById("signinBtn").addEventListener('click',
   const username = userInput.value
   const password = passInput.value
   if(username == 'admin' && password == 'admin123'){
-    window.location.assign("../dashboard.html")
+    window.location.assign("./dashboard.html")
   }else{
     alert('Wrong username or password')
     return
